@@ -22,7 +22,7 @@
                                name="entradas" placeholder="Ingrese la cantidad del producto"
                                required autocomplete="off">
                     </div>
-                </div>
+                </div> <br>
 
                 <div class="row">
                     <div class="col-sm-2">
@@ -40,5 +40,16 @@
         <!-- Footer -->
         <div th:insert="~{admin/template_admin::footer_admin}"></div>
     </body>
+    <style>
+        .body{
+            position: relative;
+        }
+        .footer{
+            position: absolute;
+            bottom:0px;
+            height: 60px;
+            width: 100%;
+        }
+    </style>
 
 </html>

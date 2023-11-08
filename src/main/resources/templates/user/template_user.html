@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
 <html xmlns:th="http://www.thymeleaf.org">
     <head th:fragment="head">
         <title>Ecommerce</title>
@@ -9,16 +14,19 @@
     </head>
     <body class="body">
     <div th:fragment="header">
-        <nav class="navbar navbar-expand-lg bg-success ">
+        <nav class="navbar navbar-expand-xxl bg-dark">
+            <div class="col-md-6 text-center">
+    <img th:src="@{/images/logo.png}" alt="Logo" width="130" height="130" class="product-image mx-auto">
+    </div>
             <div class="container-fluid">
-                <a class="navbar-brand" th:href="@{/home}">Home</a>
+                <a class="navbar-brand text-white" th:href="@{/home}">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" style="width: fit-content; margin-left: auto">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 OPCIONES
                             </a>
                             <ul class="dropdown-menu">
@@ -37,8 +45,8 @@
     </div>
     </body>
     <div th:fragment="footer">
-        <footer class="footer py-4 bg-success">
-            <p class="text-center text-white">Copyright &copy; Jast 2023</p>
+        <footer class="footer py-4 bg-dark">
+            <p class="text-center text-white">Copyright &copy; Alejandrompr 2023</p>
             <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
         </footer>
     </div>

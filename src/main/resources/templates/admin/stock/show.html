@@ -8,9 +8,9 @@
         <div th:insert = "~{admin/template_admin::header_admin}"></div>
 
         <!-- Page Content -->
-        <div class="container">
+        <div class="container"> <br>
 
-            <a class="btn btn-primary" th:href="@{/admin/products/stock/create-unit-product/{id}  (id = ${idproduct}) }" > Añadir unidades</a>
+            <a class="btn btn-success" th:href="@{/admin/products/stock/create-unit-product/{id}  (id = ${idproduct}) }" > Añadir unidades</a>
             <h2>Inventario</h2>
             <table class="table">
                 <thead>
@@ -37,5 +37,16 @@
         <div th:insert="~{admin/template_admin::footer_admin}"></div>
 
     </body>
+    <style>
+        .body{
+            position: relative;
+        }
+        .footer{
+            position: absolute;
+            bottom:0px;
+            height: 60px;
+            width: 100%;
+        }
+    </style>
 
 </html>

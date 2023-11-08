@@ -22,7 +22,7 @@ import upeu.edu.pe.AUNaturalCosmetics.infrastructure.entity.UserEntity;
 public class OrderController {
     private final CartService cartService;    
     private final Logger log = LoggerFactory.getLogger(OrderController.class);    
-    
+        
 
     public OrderController(CartService cartService) {
         this.cartService = cartService;
@@ -42,4 +42,5 @@ public class OrderController {
         return "user/sumaryorder";
         
     }
+    
 }
