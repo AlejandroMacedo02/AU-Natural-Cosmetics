@@ -30,14 +30,14 @@ public class OrderProductEntity {
     private Integer quantity;
     @ManyToOne
     @JoinColumn(name = "order_id")
-    private OrderEntity orderEntity;
+    private OrderEntity orderEntity; 
 
     public OrderProductEntity() {
     }
-    
 
-    public OrderProductEntity(Integer id, ProductEntity productEntity, Integer quantity, OrderEntity orderEntity) {
-        this.id = id;
+    
+    public OrderProductEntity(ProductEntity productEntity, Integer quantity, OrderEntity orderEntity) {
+       
         this.productEntity = productEntity;
         this.quantity = quantity;
         this.orderEntity = orderEntity;

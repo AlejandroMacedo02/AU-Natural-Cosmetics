@@ -13,12 +13,14 @@ import upeu.edu.pe.AUNaturalCosmetics.app.repository.OrderProductRepository;
 import upeu.edu.pe.AUNaturalCosmetics.app.repository.OrderRepository;
 import upeu.edu.pe.AUNaturalCosmetics.app.repository.ProductRepository;
 import upeu.edu.pe.AUNaturalCosmetics.app.repository.StockRepository;
+import upeu.edu.pe.AUNaturalCosmetics.app.repository.UserRepository;
 import upeu.edu.pe.AUNaturalCosmetics.app.service.CartService;
 import upeu.edu.pe.AUNaturalCosmetics.app.service.OrderProductService;
 import upeu.edu.pe.AUNaturalCosmetics.app.service.OrderService;
 import upeu.edu.pe.AUNaturalCosmetics.app.service.ProductService;
 import upeu.edu.pe.AUNaturalCosmetics.app.service.StockService;
 import upeu.edu.pe.AUNaturalCosmetics.app.service.UploadFile;
+import upeu.edu.pe.AUNaturalCosmetics.app.service.UserService;
 import upeu.edu.pe.AUNaturalCosmetics.app.service.ValidateStock;
 
 /**
@@ -55,6 +57,11 @@ public class BeanConfiguration {
     @Bean
     public OrderProductService orderProductService(OrderProductRepository orderProductRepository){
         return  new OrderProductService(orderProductRepository);
+    }
+    
+    @Bean
+    public UserService userService(UserRepository userRepository){
+        return new UserService(userRepository);
     }
     
      @Bean

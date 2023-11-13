@@ -11,8 +11,8 @@
         <div class="container"> <br>
 
             <a class="btn btn-success" th:href="@{/admin/products/stock/create-unit-product/{id}  (id = ${idproduct}) }" > Añadir unidades</a>
-            <h2>Inventario</h2>
-            <table class="table">
+            <h2 style="font-weight: bold;" class="text-center text-white mb-6">Inventario</h2>
+          <table class="table table-success table-striped">
                 <thead>
                 <th scope="col">Entrada/Unidades</th>
                 <th scope="col">Salida/Unidades</th>
@@ -38,8 +38,12 @@
 
     </body>
     <style>
+        body{
+            background-color: #2c3338;
+        }
         .body{
             position: relative;
+            
         }
         .footer{
             position: absolute;

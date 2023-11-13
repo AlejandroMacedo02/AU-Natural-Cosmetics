@@ -22,11 +22,17 @@ public class AdminController {
     public AdminController(ProductService productService) {
         this.productService = productService;
     }
-    @GetMapping
+    @GetMapping("")
     public String home(Model model){
         model.addAttribute("products", productService.getProducts());
         return "admin/home_admin";
         
         
     }
+    
+    @GetMapping("/dashboard")
+    public String dashboard(Model model){
+        model.addAttribute("products", productService.getProducts());
+        return "admin/admin";
+}
 }
